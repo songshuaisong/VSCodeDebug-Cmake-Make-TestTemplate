@@ -1,4 +1,19 @@
-# VSCodeDebug-Cmake-Make-TestTemplate
+# 
+
+
+<h2 align="center">- VSCodeDebug-Cmake-Make-TestTemplate - </h2>
+<p align="center">C Language Version of the VSCodeDebug, Cmake, Make template Code</p>
+ 
+<p align="center">
+    <a href="https://travis-ci.com/songshuaisong/VSCodeDebug-Cmake-Make-TestTemplate"><img alt="Build Status" src="https://travis-ci.com/songshuaisong/VSCodeDebug-Cmake-Make-TestTemplate.svg?token=w1QpzPiLyTL55CJtEDLA&branch=main"></a>
+	<a href="http://www.kernel.org"><img alt="Platform (GNU/Linux)" src="https://img.shields.io/badge/platform-GNU/Linux-blue.svg"></a>
+    <a href="http://www.windows.org"><img alt="Platform (MinGW/Windows)" src="https://img.shields.io/badge/platform-MinGW/Windows-blue.svg"></a>
+    <a href="http://www.apache.org"><img alt="license-Apache2.0" src="https://img.shields.io/badge/license-Apache2.0-yellow.svg"></a>
+	<a href="https://mit-license.org/"><img alt="license-Apache2.0" src="https://img.shields.io/badge/license-MIT-yellow.svg"></a>
+    <a href="https://cmake.org/"><img alt="cmake" src="https://img.shields.io/badge/cmake->3.0-green.svg"></a>
+</p>
+
+
 
 集成了 Makefile 多文件管理、Cmake构建、VSCode的在线仿真调试等多种功能。
 
