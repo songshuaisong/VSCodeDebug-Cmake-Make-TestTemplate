@@ -7,15 +7,22 @@
 
 // 聲明外部變量
 extern TfunlyCmt funCmt;
+
 int main(int argc, const char **argv)
 {
     int a = 10, b = 2;
+    int c = 0;
 
-    printf("a + b = %d\r\n", add(a, b));
-    printf("a - b = %d\r\n", sub(a, b));
-    printf("a * b = %d\r\n", mul(a, b));
-    printf("a / b = %d\r\n", dev(a, b));
+    c = add(a, b);
+    printf("a + b = %d\n", c);
+    c = sub(a, b);
+    printf("a - b = %d\n", c);
+    c = mul(a, b);
+    printf("a * b = %d\n", c);
+    c = dev(a, b);
+    printf("a / b = %d\n", c);
 
+#ifdef linux
     funCmt.keyboard();
     funCmt.fuckYouBug();
     funCmt.fuckYouBeauty();
@@ -24,9 +31,17 @@ int main(int argc, const char **argv)
     funCmt.TheLittleGirl();
     funCmt.weWantFuckYou();
     funCmt.humanSkeleton();
-
+#endif
+    /**
+     * 在windows环境下
+     * _WIN32：为编译器内置的宏，对32和64位程序有效。
+     * _WIN64：与_WIN32类似，只是对64位程序有效。
+     * _MSC_VER，为vc版本的内置宏
+    **/
+#ifdef _MSC_VER
     printf("Please press any key to continue...");
-    // getchar();
+    getchar();
+#endif
 
     return 0;
 }

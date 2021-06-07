@@ -15,7 +15,10 @@
 
 
 
-集成了 Makefile 多文件管理、Cmake构建、VSCode的在线仿真调试等多种功能。
+    主要是VSCode的调试测试的工程文件
+    主要用于在 linux 环境下的 VSCode 的调试 
+
+    集成了 Makefile 多文件管理、Cmake构建、VSCode的在线仿真调试等多种功能。
 
 ## 一、Makefile
 1、在linux环境下，可以支持并执行系列指令：

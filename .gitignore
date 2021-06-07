@@ -1,5 +1,5 @@
-bin
-build
 *.o
-*.out
-*.exe 
+bin
+*.exe
+build
+.dist

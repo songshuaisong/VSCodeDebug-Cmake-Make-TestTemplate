@@ -10,8 +10,8 @@
             "type": "cppdbg", //调试的类型，Vscode现在支持很多，我这里主要是C，所以只能是cppdbg
             "request": "launch", //配置文件的请求类型，有launch和attach两种，具体看官方文档
             "targetArchitecture": "x64", //硬件内核架构，为64bit，如图设置
-            // "program": "${workspaceRoot}/${fileBasenameNoExtension}.exe", //可执行文件的路径和文件名称
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceRoot}/obj/${fileBasenameNoExtension}", //可执行文件的路径和文件名称
+            // "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [], //主函数调用时传入的参数
             "stopAtEntry": false, //设为true时程序将暂停在程序入口处
             "cwd": "${workspaceFolder}", //调试时的工作目录
@@ -19,7 +19,7 @@
             "internalConsoleOptions": "openOnSessionStart", //
             "externalConsole": false, //调试时是否显示控制台窗口
             "MIMode": "gdb", //指定连接的调试器，可以省略不写
-            // "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe", //调试器路径,在Linux环境下需要注释掉这一行
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe", //调试器路径,在Linux环境下需要注释掉这一行
             "setupCommands": [ //不知道干嘛的
                 {
                     "description": "Enable pretty-printing for gdb",
